@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form (HTML/CSS)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+          <h1 id="title">Music School Registration</h1>
+          <p id="description">To register please fill out the form below</p>
+        </header>
+        <form id="survey-form">
+          <div class="form-div" id="name-box">
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" name="name" placeholder=" Enter your name" required>
+          </div>
+          
+          <div class="form-div" id="email-box">
+            <label for="email" id="email-label">Email</label>
+            <input id="email" type="email" name="email" placeholder=" Enter your email" required>
+          </div>
+         
+          <div class="form-div" id="dropdown-box">
+            <label for="dropdown" id="instrument-label">Instrument</label>
+            <select name="instrument" id="dropdown">
+              <option disabled selected value>Select an option</option>
+              <option value="cello">Cello</option>
+              <option value="clarinet">Clarinet</option>
+              <option value="drums">Drums</option>
+              <option value="flute">Flute</option>
+              <option value="guitar">Guitar</option>
+              <option value="piano">Piano</option>
+              <option value="saxophone">Saxophone</option>
+              <option value="trombone">Trombone</option>
+              <option value="trumpet">Trumpet</option>    
+              <option value="viola">Viola</option>
+              <option value="violin">Violin</option>
+            </select>
+          </div>
+          
+          <div class="form-div" id="number-box">
+            <label for="number" id="number-label">Numbers of Years Playing</label>
+            <input id="number" type="number" name="years" min="0" max="99" placeholder=" Enter your years" required>
+          </div>
+          
+          <div class="form-div" id="checkbox-box">
+            <p>Preferable Lesson Day(s)</p>
+            <label for="monday"><input id="monday" class="input-checkbox" type="checkbox" name="days" value="monday">Monday</label>
+            <label for="tuesday"><input id="tuesday" class="input-checkbox" type="checkbox" name="days" value="tuesday">Tuesday</label>
+            <label for="wednesday"><input id="wednesday" class="input-checkbox" type="checkbox" name="days" value="wednesday">Wednesday</label>
+            <label for="thursday"><input id="thursday" class="input-checkbox" type="checkbox" name="days" value="thursday">Thursday</label>
+            <label for="friday"><input id="friday" class="input-checkbox" type="checkbox" name="days" value="friday">Friday</label>
+          </div>
+          
+          <div class="form-div" id="radio-box">
+            <p>Group Lessons</p>
+            <label for="choir"><input id="choir" class="input-radio" type="radio" name="groups" value="choir" checked>Choir</label>                              
+            <label for="guitar-group"><input id="guitar-group" class="input-radio" type="radio" name="groups" value="guitar-group">Guitar group</label>
+            <label for="percussion-band"><input id="percussion-band" class="input-radio" type="radio" name="groups" value="percussion-band">Percussion band</label>
+            <label for="string-band"><input id="string-band" class="input-radio" type="radio" name="groups" value="string-band">String band</label>
+            <label for="wind-band"><input id="wind-band" class="input-radio" type="radio" name="groups" value="wind-band">Wind band</label>
+          </div>
+          
+          <div class="form-div" id="comment-box">
+            <p>Comments</p>
+            <textarea name="comment" id="comments" placeholder=" Enter your comment here..."></textarea>
+          </div>
+          
+          <div class="form-div" id="submit-box">
+            <button type="submit" id="submit">Send</button>
+          </div>
+        </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="script.js"></script>     
+</body>
+</html>
